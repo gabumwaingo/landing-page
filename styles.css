@@ -1,70 +1,127 @@
 body {
-    background-color: #333; /* Dark grey background */
-    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header Styles */
 header {
     text-align: center;
     padding: 100px 0;
+    background-image: url('./assets/img-2.jpg');
+    color: #eee; /* Cream text color */
+    transition: background-color 0.3s;
 }
 
-header img {
-    max-width: 100%;
-}
-
+/* Header h1 Styles */
 header h1 {
     color: #c71eff; /* Bright neon purple */
 }
 
-nav ul {
-    list-style: none;
+/* Header button Styles */
+header .btn-primary {
+    background-color: #c71eff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-nav li {
-    display: inline;
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+ul.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul.nav li {
     margin-right: 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
+ul.nav li a {
     color: white;
-    border: 2px solid #c71eff; /* Bright neon purple border */
-    border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
 }
 
-.btn:hover {
-    background-color: #ffaa00; /* Neon orange on hover */
-    border-color: #ffaa00;
+ul.nav
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Responsive grid */
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s; /* Add hover effect */
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.team-member-social {
+    display: flex;
+    justify-content: center;
+}
+
+.team-member-social a {
+    font-size: 24px;
     color: #333;
-}
-/* Navbar button styles */
-.navbar-light .navbar-nav .nav-link {
-    color: black !important; /* Black text color for navbar links */
-    font-weight: bold; /* Bolder font for navbar links */
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-/* Navbar button hover styles */
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #ffaa00 !important; /* Bright orange text color on hover */
+.team-member-social a:hover {
+    color: #c71eff; /* Bright neon purple on hover */
 }
-
-/* Footer text styles */
-footer {
-    color: black !important; /* Black text color for footer */
-    background-color: #f8f9fa; /* Light grey background for footer */
-    padding: 20px 0;
-    font-weight: bold; /* Bolder font for footer */
-}
-#contact {
-    background-color: #333; /* Light grey background for contact section */
-    padding: 50px 0;
-    color: black !important; /* Black text color for contact section */
-    font-weight: bold; /* Bolder font for contact section */
-}
-
-/* Add styles for the feature section, about section, and footer as needed */

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitStatsFlix</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body data-spy="scroll" data-target="#navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">GitStatsFlix</a>
@@ -26,63 +26,106 @@
     </nav>
 
     <header id="home" class="text-center">
-        <img src="./assets/img-2.jpg" alt="GitStatsFlix Cover Image" class="img-fluid">
         <h1 class="text-primary">GitStatsFlix</h1>
         <p class="lead">Discover and track GitHub statistics with ease.</p>
         <a href="#" class="btn btn-primary">Try GitStatsFlix</a>
     </header>
 
-    <section id="features" class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Track Your GitHub Activity</h2>
-                    <p>GitStatsFlix allows you to effortlessly monitor your GitHub activity, including commits, pull requests, and issues. Gain insights into your contributions and stay on top of your projects.</p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Visualize Your Progress</h2>
-                    <p>With interactive charts and graphs, GitStatsFlix provides a visual representation of your GitHub data. Understand trends, spot bottlenecks, and make data-driven decisions.</p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Compare with Peers</h2>
-                    <p>See how you stack up against other developers by comparing your GitHub stats. Identify areas where you can improve and set benchmarks for your development journey.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="text-center">
-        <div class="container">
+    <section id="about">
+        <div class="container bg-light p-4">
             <h2>About GitStatsFlix</h2>
-            <p>This project was inspired by our passion for coding and the desire to help developers like you better understand their GitHub activity. It's a personal journey of growth and learning.</p>
-            <p>GitStatsFlix is a Portfolio Project for Holberton School. <a href="https://www.holbertonschool.com/">Learn more</a>.</p>
-            <div class="team">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/team-member1"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/team-member1"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/team_member1"><i class="fab fa-twitter"></i></a>
+            <p>Welcome to GitStatsFlix, your go-to platform for in-depth GitHub statistics analysis. Our mission is to empower developers like you to gain insights into your GitHub activity and make data-driven decisions for your projects.</p>
+            <p>GitStatsFlix was born out of a shared passion for coding and a desire to contribute to the developer community. We believe that understanding your GitHub data is essential for growth and success in the coding world.</p>
+            
+            <h3>Our Features</h3>
+            <ul>
+                <li><strong>GitHub Activity Tracking:</strong> GitStatsFlix allows you to effortlessly monitor your GitHub activity, including commits, pull requests, and issues. Keep a close eye on your contributions and project progress.</li>
+                <li><strong>Data Visualization:</strong> With interactive charts and graphs, GitStatsFlix provides a visual representation of your GitHub data. Easily identify trends, bottlenecks, and areas for improvement.</li>
+                <li><strong>Peer Comparison:</strong> Compare your GitHub stats with other developers to see where you stand. Benchmark your progress and set ambitious goals for your coding journey.</li>
+            </ul>
+    
+            <h3>Our Team</h3>
+            <div class="team-grid">
+                <div class="team">
+                    <div class=" team-member-info">
+                        <div class="team-member">
+                            <img src="./assets/person-1.jpg" alt="Sharon" width= "500px" height= " 500px">
+                            <h4>John Doe</h4>
+                            <p>Co-Founder & Developer</p>
+                            <a href="https://www.linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        </div>
+        
+                        <div class="team-member">
+                            <img src="./assets/person-2.jpg" alt="John" width= "500px" height= " 500px">
+                            <h4>Jane Smith</h4>
+                            <p>Co-Founder & Designer</p>
+                            <a href="https://www.linkedin.com/in/janesmith" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://github.com/janesmith" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://twitter.com/janesmith" target="_blank" rel="noopener noreferrer">Twitter</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/team-member2"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/team-member2"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/team_member2"><i class="fab fa-twitter"></i></a>
-                </div>
-                <!-- Add more team members as needed -->
             </div>
+    
+            <p>GitStatsFlix is committed to helping developers succeed. We believe that data-driven decisions can lead to more efficient coding, better project management, and a stronger developer community.</p>
+    
             <a href="https://github.com/your-repo-link" class="btn btn-primary">GitHub Repository</a>
-            <!-- Add your media here -->
         </div>
     </section>
+    
 
-    <section id="contact" class="bg-light text-center py-5">
-        <div class="container">
+    <section id="features">
+        <div class="container bg-light p-4">
+            <h2>Discover the Power of GitStatsFlix</h2>
+            <p>GitStatsFlix is packed with powerful features to help you gain insights into your GitHub activity and enhance your development journey. Explore our key features below:</p>
+    
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="./assets/img-2.jpg" alt="Feature 1" style ="width : 800px; height : 500px">
+                </div>
+                <div class="feature-description">
+                    <h3>Track Your GitHub Activity</h3>
+                    <p>Effortlessly monitor your GitHub activity, including commits, pull requests, and issues. Stay on top of your contributions and projects with real-time data.</p>
+                </div>
+            </div>
+    
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="feature-2.jpg" alt="Feature 2" style ="width : 800px; height : 500px">
+                </div>
+                <div class="feature-description">
+                    <h3>Visualize Your Progress</h3>
+                    <p>Visual representation of your GitHub data with interactive charts and graphs. Understand trends, spot bottlenecks, and make data-driven decisions.</p>
+                </div>
+            </div>
+    
+            <div class="feature">
+                <div class="feature-image">
+                    <img src="./assets/pic-1.jpg" alt="Feature 3" style ="width : 800px; height : 500px">
+                </div>
+                <div class="feature-description">
+                    <h3>Compare with Peers</h3>
+                    <p>Measure your performance against other developers. Identify areas for improvement and set benchmarks for your coding journey.</p>
+                </div>
+            </div>
+    
+            <!-- Add more features as needed -->
+        </div>
+    </section>
+    
+
+
+    <section id="contact">
+        <div class="container bg-light p-4">
             <h2>Contact Us</h2>
             <p>Have questions or feedback? Feel free to reach out!</p>
             <a href="mailto:contact@example.com" class="btn btn-primary"><i class="fas fa-hand-wave"></i> Say Hello <i class="far fa-smile"></i></a>
         </div>
     </section>
 
-    <footer class="bg-light text-center py-3">
+    <footer class="bg-dark text-cream py-3">
         <div class="container">
             <p>&copy; 2023 GitStatsFlix</p>
             <a href="#">Privacy Policy</a>
